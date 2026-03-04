@@ -61,9 +61,9 @@ https://helioconde.github.io/portfolio2.0/
 
 ## GitHub Stats
 
-![HelioConde GitHub stats](https://github-readme-stats.vercel.app/api?username=HelioConde&show_icons=true)
+![HelioConde GitHub stats](https://github-readme-stats.vercel.app/api?username=HelioConde&show_icons=true&theme=tokyonight)
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=HelioConde&layout=compact)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=HelioConde&layout=compact&theme=tokyonight)
 
 ---
 
