@@ -1,15 +1,12 @@
 <div align="center">
-
-# Olá, sou Hélio Conde 👋
-
-### Desenvolvedor Front-End · Full-Stack na prática · Game Development & Modding
-
-**Crio experiências que saem do código e chegam às pessoas:** ferramentas web, sistemas de gestão, jogos independentes e mods para a comunidade.
-
-[![Portfólio](https://img.shields.io/badge/VER_PORTF%C3%93LIO-18181b?style=for-the-badge&logo=googlechrome&logoColor=white)](https://helioconde.github.io/portfolio2.0/)
-[![LinkedIn](https://img.shields.io/badge/LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/helioconde/)
-[![Projetos](https://img.shields.io/badge/MEUS_REPOSIT%C3%93RIOS-24292f?style=for-the-badge&logo=github&logoColor=white)](https://github.com/HelioConde?tab=repositories)
-
+  <h1>Olá, sou Hélio Conde 👋</h1>
+  <h3>Desenvolvedor Front-End · Full-Stack na prática · Game Development & Modding</h3>
+  <p><strong>Crio experiências que saem do código e chegam às pessoas:</strong> ferramentas web, sistemas de gestão, jogos independentes e mods para a comunidade.</p>
+  <p>
+    <a href="https://helioconde.github.io/portfolio2.0/"><img src="https://img.shields.io/badge/VER_PORTF%C3%93LIO-18181b?style=for-the-badge&amp;logo=googlechrome&amp;logoColor=white" alt="Ver portfólio"></a>
+    <a href="https://www.linkedin.com/in/helioconde/"><img src="https://img.shields.io/badge/LINKEDIN-0A66C2?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" alt="LinkedIn"></a>
+    <a href="https://github.com/HelioConde?tab=repositories"><img src="https://img.shields.io/badge/MEUS_REPOSIT%C3%93RIOS-24292f?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="Meus repositórios"></a>
+  </p>
 </div>
 
 ---
@@ -70,22 +67,22 @@
 
 ## 🧰 Tecnologias que utilizo
 
-<div align="center">
+<p align="center">
 
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![React](https://img.shields.io/badge/React-149ECA?style=flat-square&logo=react&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
-![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
-![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=flat-square&logo=supabase&logoColor=white)
-![C%23](https://img.shields.io/badge/C%23-512BD4?style=flat-square&logo=csharp&logoColor=white)
-![Godot](https://img.shields.io/badge/Godot-478CBF?style=flat-square&logo=godotengine&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+<img alt="HTML5" src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white">
+<img alt="CSS3" src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white">
+<img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black">
+<img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white">
+<img alt="React" src="https://img.shields.io/badge/React-149ECA?style=flat-square&logo=react&logoColor=white">
+<img alt="Node.js" src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white">
+<img alt="PHP" src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white">
+<img alt="MySQL" src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white">
+<img alt="Supabase" src="https://img.shields.io/badge/Supabase-3FCF8E?style=flat-square&logo=supabase&logoColor=white">
+<img alt="C%23" src="https://img.shields.io/badge/C%23-512BD4?style=flat-square&logo=csharp&logoColor=white">
+<img alt="Godot" src="https://img.shields.io/badge/Godot-478CBF?style=flat-square&logo=godotengine&logoColor=white">
+<img alt="Git" src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white">
 
-</div>
+</p>
 
 **Meu foco:** criar interfaces bem cuidadas, integrar frontend e backend, automatizar rotinas e desenvolver experiências interativas. Os repositórios documentam tanto projetos concluídos quanto protótipos e experimentos.
 
@@ -101,8 +98,8 @@ Alguns trabalhos que fazem parte dessa evolução:
 
 <div align="center">
 
-### Vamos construir algo?
+<h3>Vamos construir algo?</h3>
 
-**[Meu portfólio](https://helioconde.github.io/portfolio2.0/)** · **[LinkedIn](https://www.linkedin.com/in/helioconde/)** · **[Todos os projetos](https://github.com/HelioConde?tab=repositories)**
+<p><a href="https://helioconde.github.io/portfolio2.0/">Meu portfólio</a> · <a href="https://www.linkedin.com/in/helioconde/">LinkedIn</a> · <a href="https://github.com/HelioConde?tab=repositories">Todos os projetos</a></p>
 
 </div>
