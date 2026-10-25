@@ -69,6 +69,14 @@
 | **[ZeroTwo.gg](https://github.com/HelioConde/zerotwo.gg)** | Histórias e análises da jornada em League of Legends | React · Riot API |
 | **[chibi.gg](https://github.com/HelioConde/chibi.gg)** | Revisão de partidas e decisões em Teamfight Tactics | React · TypeScript |
 
+## 🔧 Mais projetos para explorar
+
+**Modding e jogos web:** [DualGear — Equipment Switcher](https://github.com/HelioConde/DualGear-Equipment-Switcher) · [Chat Arena, integrada ao Twitch](https://github.com/HelioConde/Game_Linked_to_Twitch-Chat) · [Game Clicker](https://github.com/HelioConde/Game-clicker-in-Jquery) · [Grand Chase HUD (protótipo)](https://github.com/HelioConde/Grand-Chase-Hud).
+
+**Ferramentas e produtividade:** [Painel de Gestão](https://github.com/HelioConde/Painel-de-gest-o) · [AgendaLeve](https://github.com/HelioConde/agendaleve) · [DocPronto](https://github.com/HelioConde/docpronto) · [MontaPC](https://github.com/HelioConde/montapc) · [Perto](https://github.com/HelioConde/perto) · [GameRadar](https://github.com/HelioConde/gameradar).
+
+Esses repositórios variam de **projetos de estudo a betas**, e cada README explica o estágio real de desenvolvimento.
+
 ## 🧰 Tecnologias
 
 **Interfaces:** HTML · CSS · JavaScript · TypeScript · React · Vite  
