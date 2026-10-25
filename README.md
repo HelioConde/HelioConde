@@ -75,6 +75,8 @@
 
 **Ferramentas e produtividade:** [Painel de Gestão](https://github.com/HelioConde/Painel-de-gest-o) · [AgendaLeve](https://github.com/HelioConde/agendaleve) · [DocPronto](https://github.com/HelioConde/docpronto) · [MontaPC](https://github.com/HelioConde/montapc) · [Perto](https://github.com/HelioConde/perto) · [GameRadar](https://github.com/HelioConde/gameradar).
 
+**Pesquisa e experimentos:** [Brain-SSD — IA local](https://github.com/HelioConde/I.A) · [Slimekeepers Sprite AI](https://github.com/HelioConde/slimekeepers-sprite-ai-) · [Riot Legacy](https://github.com/HelioConde/riot-legacy) · [DJ Sona](https://github.com/HelioConde/dj-sona) · [Desafio React](https://github.com/HelioConde/Desafio-React-Francisco-Helio).
+
 Esses repositórios variam de **projetos de estudo a betas**, e cada README explica o estágio real de desenvolvimento.
 
 ## 🧰 Tecnologias
