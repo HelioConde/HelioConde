@@ -1,169 +1,129 @@
 <div align="center">
 
-<h1>Hélio Conde 👋</h1>
+<h1>Hélio Conde</h1>
 
-<p><strong>Desenvolvedor Front-End · Criador de produtos web · Game Developer</strong></p>
+<p><strong>Desenvolvedor Front-End · Produtos web · Jogos indie</strong></p>
 
-<p>Transformo ideias e problemas reais em ferramentas úteis, interfaces cuidadas e experiências de jogo.<br/>Gosto de construir, testar, publicar e melhorar continuamente.</p>
+<p>Crio ferramentas para problemas reais e experiências para quem gosta de jogar.<br>Do protótipo à publicação, meu foco é construir, testar e melhorar.</p>
 
 <p>
-  <a href="https://helioconde.github.io/portfolio2.0/"><img alt="Visitar meu portfólio" src="https://img.shields.io/badge/Portf%C3%B3lio-111827?style=for-the-badge&logo=googlechrome&logoColor=white"></a>
-  <a href="https://www.linkedin.com/in/helioconde/"><img alt="Conhecer meu LinkedIn" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"></a>
-  <a href="https://github.com/HelioConde?tab=repositories"><img alt="Explorar meus repositórios no GitHub" src="https://img.shields.io/badge/Reposit%C3%B3rios-24292F?style=for-the-badge&logo=github&logoColor=white"></a>
+  <a href="https://helioconde.github.io/portfolio2.0/"><img src="https://img.shields.io/badge/Portf%C3%B3lio-111827?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Acessar portfólio"></a>
+  <a href="https://www.linkedin.com/in/helioconde/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="Abrir LinkedIn"></a>
+  <a href="https://github.com/HelioConde?tab=repositories"><img src="https://img.shields.io/badge/Projetos-24292F?style=for-the-badge&logo=github&logoColor=white" alt="Explorar todos os repositórios"></a>
 </p>
-
-<sub>🇧🇷 Brasil · Projetos reais, estudos e experiências em evolução</sub>
 
 </div>
 
-**Explore:** [Galeria de projetos](#galeria-de-projetos) · [Projetos em destaque](#projetos-em-destaque) · [Jogos em desenvolvimento](#jogos-em-desenvolvimento) · [Outros projetos](#outros-projetos) · [Tecnologias](#tecnologias) · [Contato](#contato)
+[**Produtos publicados**](#projetos-em-destaque) · [**Jogos em desenvolvimento**](#jogos-em-desenvolvimento) · [**Mais projetos**](#outros-projetos) · [**Tecnologias**](#tecnologias)
 
 ---
 
-## O que eu construo
-
-- **Produtos para problemas reais:** aplicações para varejo, produtividade e organização.
-- **Experiências web:** interfaces responsivas, fluxos completos e melhoria contínua da experiência de uso.
-- **Jogos e experimentos:** projetos em Godot, multiplayer web, ferramentas de criação e mods.
-
-## Galeria de projetos
-
-Imagens **reais de interfaces e publicações**, guardadas no [repositório do meu portfólio](https://github.com/HelioConde/portfolio2.0). Clique para conhecer cada projeto.
-
-<div align="center">
-
-<a href="https://ofertamatica.com.br/" title="Experimentar Ofertamática"><img src="https://raw.githubusercontent.com/HelioConde/portfolio2.0/main/img/projects/ofertamatica.jpg" alt="Captura real do gerador de cartazes promocionais Ofertamática" width="48%"></a>
-<a href="https://helioconde.github.io/site-pizzaria/" title="Abrir Base Studio Pizzas"><img src="https://raw.githubusercontent.com/HelioConde/portfolio2.0/main/img/projects/base-studio-pizzas.jpg" alt="Captura real da página inicial do delivery Base Studio Pizzas" width="48%"></a>
-
-<sub><strong>Ofertamática</strong> — cartazes para o varejo · <strong>Base Studio Pizzas</strong> — delivery full-stack</sub>
-
-<a href="https://helioconde.github.io/Re-Dream/" title="Experimentar Re:Dream"><img src="https://raw.githubusercontent.com/HelioConde/portfolio2.0/main/img/projects/redream.jpg" alt="Captura real da tela inicial da versão web pré-alfa de Re:Dream" width="48%"></a>
-<a href="https://helioconde.github.io/babyOnScreen/" title="Abrir Baby On Screen"><img src="https://raw.githubusercontent.com/HelioConde/portfolio2.0/main/img/projects/baby-on-screen.jpg" alt="Captura real da versão web de Baby On Screen com o mascote virtual" width="48%"></a>
-
-<sub><strong>Re:Dream</strong> — pré-alfa em desenvolvimento · <strong>Baby On Screen</strong> — mascote virtual web</sub>
-
-<a href="https://github.com/HelioConde/Slime-Harvest" title="Conhecer Slimekeepers"><img src="https://raw.githubusercontent.com/HelioConde/portfolio2.0/main/img/projects/slimekeepers-menu.png" alt="Arte do menu de Slimekeepers Lost Valley; não é uma captura de gameplay" width="48%"></a>
-<a href="https://thunderstore.io/c/riskofrain2/p/CONDE/PlayWithEliteItem/" title="Conhecer PlayWithEliteItem"><img src="https://raw.githubusercontent.com/HelioConde/portfolio2.0/main/img/projects/playwitheliteitem.jpg" alt="Captura da página pública do mod PlayWithEliteItem no Thunderstore; não é gameplay" width="48%"></a>
-
-<sub><strong>Slimekeepers: Lost Valley</strong> — arte do menu · <strong>PlayWithEliteItem</strong> — página do mod publicado</sub>
-
-</div>
-
-<sub>As capturas dos aplicativos são das versões públicas, obtidas com Playwright. A arte de Slimekeepers vem do repositório do jogo; a imagem do mod mostra sua publicação. [Origens e atualização das imagens](https://github.com/HelioConde/portfolio2.0/blob/main/docs/PREVIAS_PROJETOS.md).</sub>
-
 ## Projetos em destaque
 
-### 🛒 Ofertamática — cartazes promocionais para o varejo
+### 🛒 Ofertamática
 
-Ferramenta para **criar e imprimir cartazes de ofertas** com menos trabalho manual. Reúne importação de produtos, composição visual, personalização e exportação para impressão.
+<a href="https://ofertamatica.com.br/">
+  <img src="https://raw.githubusercontent.com/HelioConde/portfolio2.0/main/img/projects/ofertamatica.jpg" width="680" alt="Interface real da Ofertamática para criar e imprimir cartazes promocionais">
+</a>
 
-**Tecnologias:** React · Vite · JavaScript · Impressão / PDF  
-**Links:** [Experimentar Ofertamática](https://ofertamatica.com.br/) · [Código-fonte](https://github.com/HelioConde/ofertamatica)
+**Ferramenta web para o varejo.** Transforma listas de produtos em cartazes de ofertas com formatos para impressão, ajustes de preços e personalização.
 
-### 🍕 Base Studio Pizzas — experiência completa de delivery
+`React` · `Vite` · `JavaScript`  
+[**Usar a ferramenta**](https://ofertamatica.com.br/) · [Código-fonte](https://github.com/HelioConde/ofertamatica)
 
-Projeto de portfólio **concluído na versão 1.0**, com cardápio, carrinho, checkout, administração, entregas e acompanhamento de pedidos.
+### 🍕 Base Studio Pizzas
 
-**Tecnologias:** React · Vite · Supabase · PostgreSQL · Leaflet  
-**Links:** [Abrir demonstração](https://helioconde.github.io/site-pizzaria/) · [Código-fonte](https://github.com/HelioConde/site-pizzaria)
+<a href="https://helioconde.github.io/site-pizzaria/">
+  <img src="https://raw.githubusercontent.com/HelioConde/portfolio2.0/main/img/projects/base-studio-pizzas.jpg" width="680" alt="Página do Base Studio Pizzas, plataforma web de delivery">
+</a>
 
-<sub>O projeto de portfólio está concluído; operação comercial com pagamentos e dados reais exige configuração e homologação específicas.</sub>
+**Projeto de portfólio concluído (v1.0).** Experiência de delivery com cardápio, carrinho, checkout e interfaces de administração e entrega.
 
-### 🎮 PlayWithEliteItem — mod para Risk of Rain 2
+`React` · `Supabase` · `PostgreSQL`  
+[**Ver demonstração**](https://helioconde.github.io/site-pizzaria/) · [Código-fonte](https://github.com/HelioConde/site-pizzaria)
 
-Mod publicado no Thunderstore que distribui equipamentos de elite aleatórios no começo das partidas. A publicação registrava **aproximadamente 4 mil downloads em outubro de 2026**.
+<sub>Versão de portfólio finalizada; uso comercial com pagamentos reais requer configurações e validações adicionais.</sub>
 
-**Tecnologias:** C# · BepInEx · .NET · Modding  
-**Links:** [Publicação no Thunderstore](https://thunderstore.io/c/riskofrain2/p/CONDE/PlayWithEliteItem/) · [Código e documentação](https://github.com/HelioConde/PlayWithEliteItem)
+### ⚡ PlayWithEliteItem — Risk of Rain 2
 
-<sub>Thunderstore: versão publicada 1.0.1. GitHub: versão experimental 1.2.1, ainda dependente de testes em jogo e multiplayer.</sub>
+<a href="https://thunderstore.io/c/riskofrain2/p/CONDE/PlayWithEliteItem/">
+  <img src="https://raw.githubusercontent.com/HelioConde/portfolio2.0/main/img/projects/playwitheliteitem.jpg" width="680" alt="Página pública do mod PlayWithEliteItem no Thunderstore, não uma imagem de gameplay">
+</a>
+
+**Mod publicado no Thunderstore.** Distribui aspectos elite aos jogadores e explora o sistema de equipamentos de *Risk of Rain 2*.
+
+`C#` · `BepInEx` · `.NET`  
+[**Ver versão publicada**](https://thunderstore.io/c/riskofrain2/p/CONDE/PlayWithEliteItem/) · [Código e versões de teste](https://github.com/HelioConde/PlayWithEliteItem)
+
+<sub>A imagem mostra a publicação do mod, não gameplay. A versão experimental do GitHub exige testes antes de uma nova publicação.</sub>
 
 ## Jogos em desenvolvimento
 
-Estes jogos têm protótipos e funcionalidades em evolução. **Não são versões finais**: interfaces, mecânicas e conteúdo ainda podem mudar.
+<sub>Protótipos em evolução. Os recursos e a direção visual podem mudar até o lançamento.</sub>
 
 ### 🌿 Slimekeepers: Lost Valley — em desenvolvimento
 
-<a href="https://github.com/HelioConde/Slime-Harvest" title="Explorar o repositório Slimekeepers: Lost Valley">
-  <img src="https://raw.githubusercontent.com/HelioConde/portfolio2.0/main/img/projects/slimekeepers-menu.png" width="680" alt="Arte do menu principal de Slimekeepers Lost Valley, jogo cozy fantasy em desenvolvimento; não é uma captura de gameplay" />
+<a href="https://github.com/HelioConde/Slime-Harvest">
+  <img src="https://raw.githubusercontent.com/HelioConde/portfolio2.0/main/img/projects/slimekeepers-menu.png" width="680" alt="Arte do menu de Slimekeepers Lost Valley, aventura cozy fantasy em desenvolvimento; não é gameplay">
 </a>
 
-<sub>Arte do menu principal do jogo, não uma captura de gameplay.</sub>
+**Aventura cozy fantasy em Godot.** Fazenda, exploração, coleta e slimes que fazem parte de um ecossistema selvagem. O protótipo possui sistemas jogáveis ainda em integração e polimento.
 
-**Slimekeepers: Lost Valley** é um jogo de aventura *cozy fantasy* em desenvolvimento, com cultivo, exploração, coleta e slimes selvagens. O protótipo já reúne sistemas de ferramentas, recursos e fazenda, enquanto a jogabilidade e a direção visual continuam sendo aprimoradas.
+`Godot` · `GDScript` · **Em desenvolvimento**  
+[**Acompanhar o desenvolvimento**](https://github.com/HelioConde/Slime-Harvest)
 
-**Status:** 🚧 Em desenvolvimento  
-**Tecnologias:** Godot · GDScript  
-**Projeto:** [Código e progresso de Slimekeepers](https://github.com/HelioConde/Slime-Harvest)
+<sub>Arte do menu principal, não captura de gameplay.</sub>
 
 ### ⚔️ Re:Dream — em desenvolvimento
 
-<a href="https://helioconde.github.io/Re-Dream/" title="Experimentar a pré-alfa de Re:Dream">
-  <img src="https://raw.githubusercontent.com/HelioConde/portfolio2.0/main/img/projects/redream.jpg" width="680" alt="Captura real da tela inicial da pré-alfa de Re:Dream, jogo de ação 2D para navegador em desenvolvimento" />
+<a href="https://helioconde.github.io/Re-Dream/">
+  <img src="https://raw.githubusercontent.com/HelioConde/portfolio2.0/main/img/projects/redream.jpg" width="680" alt="Captura real da interface pré-alfa de Re:Dream, jogo de ação e plataformas 2D em desenvolvimento">
 </a>
 
-<sub>Captura da pré-alfa pública do jogo; não representa uma versão final nem uma sessão multiplayer ativa.</sub>
+**RPG de ação e plataformas 2D para navegador.** A pré-alfa reúne personagens, movimento, combate e salas de demonstração; a infraestrutura multiplayer e a progressão seguem em desenvolvimento.
 
-**Re:Dream** é um jogo de ação e plataformas 2D para navegador em desenvolvimento. A pré-alfa apresenta experimentos com personagens, movimento, combate e salas; o conteúdo cooperativo e os demais sistemas ainda estão evoluindo.
+`React` · `TypeScript` · `Phaser` · `WebSocket` · **Pré-alfa**  
+[**Abrir a versão web**](https://helioconde.github.io/Re-Dream/) · [Código-fonte](https://github.com/HelioConde/Re-Dream)
 
-**Status:** 🚧 Em desenvolvimento (pré-alfa)  
-**Tecnologias atuais:** React · WebSocket · JavaScript  
-**Links:** [Experimentar a pré-alfa](https://helioconde.github.io/Re-Dream/) · [Código e progresso de Re:Dream](https://github.com/HelioConde/Re-Dream)
+<sub>A imagem é da pré-alfa pública; o GitHub Pages hospeda a interface, não o servidor multiplayer.</sub>
 
 ## Outros projetos
 
 <details>
-<summary><strong>Aplicações, produtividade e ferramentas</strong></summary>
+<summary><strong>Aplicações e produtividade</strong></summary>
 
-- **[Baby On Screen](https://github.com/HelioConde/babyOnScreen)** — mascote virtual para Windows e [navegador](https://helioconde.github.io/babyOnScreen/).
-- **[Validade Zero](https://github.com/HelioConde/validade_zero)** — controle de lotes, EANs e vencimentos; MVP em evolução.
-- **[AutoEditor Studio](https://github.com/HelioConde/AutoEditorVideo)** — recortes e exportação de vídeos; beta.
-- **[VagaCerta](https://github.com/HelioConde/vagacerta)** — organização de candidaturas e entrevistas.
-- **[Painel de Gestão](https://github.com/HelioConde/Painel-de-gest-o)** — relatórios e rotinas operacionais.
-- [AgendaLeve](https://github.com/HelioConde/agendaleve) · [DocPronto](https://github.com/HelioConde/docpronto) · [MontaPC](https://github.com/HelioConde/montapc) · [Perto](https://github.com/HelioConde/perto) · [GameRadar](https://github.com/HelioConde/gameradar)
+- [**Baby On Screen**](https://github.com/HelioConde/babyOnScreen) — mascote virtual para Windows e navegador.
+- [**Validade Zero**](https://github.com/HelioConde/validade_zero) — gestão de lotes e vencimentos para o varejo.
+- [**Painel de Gestão**](https://github.com/HelioConde/Painel-de-gest-o) — relatórios e acompanhamento operacional.
+- [**AutoEditor Studio**](https://github.com/HelioConde/AutoEditorVideo) — experimentos de edição de vídeo.
+- [**VagaCerta**](https://github.com/HelioConde/vagacerta) · [AgendaLeve](https://github.com/HelioConde/agendaleve) · [DocPronto](https://github.com/HelioConde/docpronto) · [MontaPC](https://github.com/HelioConde/montapc)
 
 </details>
 
 <details>
 <summary><strong>Jogos, comunidade e modding</strong></summary>
 
-- **[TFT Board Museum](https://github.com/HelioConde/tft-board-museum)** — museu das composições jogadas em Teamfight Tactics.
-- **[ZeroTwo.gg](https://github.com/HelioConde/zerotwo.gg)** — histórias e análises de League of Legends.
-- **[chibi.gg](https://github.com/HelioConde/chibi.gg)** — revisão de partidas de Teamfight Tactics.
-- [DualGear — Equipment Switcher](https://github.com/HelioConde/DualGear-Equipment-Switcher) · [Chat Arena / Twitch](https://github.com/HelioConde/Game_Linked_to_Twitch-Chat) · [Game Clicker](https://github.com/HelioConde/Game-clicker-in-Jquery) · [Grand Chase HUD](https://github.com/HelioConde/Grand-Chase-Hud)
+- [**TFT Board Museum**](https://github.com/HelioConde/tft-board-museum) — museu de composições de Teamfight Tactics.
+- [**ZeroTwo.gg**](https://github.com/HelioConde/zerotwo.gg) · [chibi.gg](https://github.com/HelioConde/chibi.gg) — ferramentas para jogos da Riot.
+- [**DualGear — Equipment Switcher**](https://github.com/HelioConde/DualGear-Equipment-Switcher) — outro experimento de modding.
+- [**Chat Arena / Twitch**](https://github.com/HelioConde/Game_Linked_to_Twitch-Chat) · [Game Clicker](https://github.com/HelioConde/Game-clicker-in-Jquery)
 
 </details>
 
 <details>
-<summary><strong>IA, estudos e experimentos</strong></summary>
+<summary><strong>IA e experimentos</strong></summary>
 
-- **[Brain-SSD](https://github.com/HelioConde/I.A)** — experimentos com assistente e modelos de IA locais.
-- **[Slimekeepers Sprite AI](https://github.com/HelioConde/slimekeepers-sprite-ai-)** — ferramentas para explorar a produção de pixel art.
-- [Riot Legacy](https://github.com/HelioConde/riot-legacy) · [DJ Sona](https://github.com/HelioConde/dj-sona) · [Desafio React](https://github.com/HelioConde/Desafio-React-Francisco-Helio) · [Projeto CRUD](https://github.com/HelioConde/Projeto_CRUD) · [API Riot com PHP/AJAX](https://github.com/HelioConde/Api-league-of-legends-PHP-and-Ajax)
+- [**Brain-SSD**](https://github.com/HelioConde/I.A) — assistente e modelos de IA locais.
+- [**Slimekeepers Sprite AI**](https://github.com/HelioConde/slimekeepers-sprite-ai-) — experimentos de criação de sprites.
+- [**Riot Legacy**](https://github.com/HelioConde/riot-legacy) · [DJ Sona](https://github.com/HelioConde/dj-sona) · [Projeto CRUD](https://github.com/HelioConde/Projeto_CRUD)
 
 </details>
 
-<sub>Os repositórios têm diferentes níveis de maturidade — estudos, protótipos, betas e versões publicadas. Consulte cada projeto para verificar seu estado atual.</sub>
-
 ## Tecnologias
 
-**Interfaces:** HTML · CSS · JavaScript · TypeScript · React · Vite  
-**Back-end e dados:** Node.js · PHP · MySQL · PostgreSQL · Supabase  
-**Jogos e mods:** Godot · GDScript · C# · BepInEx  
-**Qualidade e ferramentas:** Git · GitHub Actions · Playwright · APIs REST
+**Front-end:** JavaScript · TypeScript · React · Vite · HTML · CSS  
+**Back-end e dados:** Node.js · PHP · PostgreSQL · MySQL · Supabase  
+**Jogos e mods:** Godot · GDScript · Phaser · C# · BepInEx  
+**Qualidade:** Git · GitHub Actions · Playwright · APIs REST
 
-## Sobre mim
-
-Tenho formação técnica em **desenvolvimento Front-End**. Aprendo colocando ideias em prática: do primeiro protótipo até uma versão que outras pessoas possam experimentar. Também gosto de unir desenvolvimento web, automação e criação de jogos.
-
-Minha trajetória inclui projetos de estudo, como o [Portfólio 2.0](https://github.com/HelioConde/portfolio2.0), e produtos que nasceram de necessidades observadas no dia a dia.
-
-## Contato
-
-<div align="center">
-
-<strong>Quer conhecer meu trabalho ou conversar sobre um projeto?</strong>
-
-<p><a href="https://helioconde.github.io/portfolio2.0/">Portfólio</a> · <a href="https://www.linkedin.com/in/helioconde/">LinkedIn</a> · <a href="https://github.com/HelioConde?tab=repositories">Todos os repositórios</a></p>
-
-</div>
+<sub>Tenho formação técnica em desenvolvimento Front-End. Os repositórios reúnem produtos publicados, projetos de portfólio, protótipos e estudos. [Ver o portfólio completo](https://helioconde.github.io/portfolio2.0/).</sub>
