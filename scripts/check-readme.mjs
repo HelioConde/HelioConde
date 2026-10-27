@@ -103,7 +103,7 @@ for (const [name,filename] of [
   check(block.includes('/img/projects/'+filename), 'Imagem precisa acompanhar a descrição: ' + name);
   check(block.includes('https://github.com/HelioConde/'), 'Link para código ausente: ' + name);
 }
-check(games.includes('não gameplay'), 'Identificar arte do menu de Slimekeepers.');
+check(games.includes('não é gameplay'), 'Identificar arte do menu de Slimekeepers.');
 check(games.includes('pré-alfa pública'), 'Distinguir a pré-alfa de Re:Dream.');
 
 for (const message of warnings) console.warn('AVISO: ' + message);
