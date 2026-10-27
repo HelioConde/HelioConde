@@ -1,0 +1,60 @@
+name: Profile README QA
+
+on:
+  push:
+    paths:
+      - README.md
+      - docs/**
+      - scripts/**
+      - package.json
+      - .github/workflows/readme-qa.yml
+  pull_request:
+    paths:
+      - README.md
+      - docs/**
+      - scripts/**
+      - package.json
+      - .github/workflows/readme-qa.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  readme:
+    name: Estrutura e acessibilidade
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+          package-manager-cache: false
+      - name: Validar o README
+        run: node scripts/check-readme.mjs
+
+  visual:
+    name: Capturas Playwright
+    needs: readme
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+          package-manager-cache: false
+      - name: Instalar Playwright
+        run: |
+          npm install --no-audit --no-fund
+          npx playwright install --with-deps chromium
+      - name: Verificar visualização no GitHub (390 / 768 / 1440 px)
+        env:
+          PROFILE_README_REF: ${{ github.head_ref || github.ref_name }}
+        run: npm run qa:visual
+      - name: Anexar capturas e relatório JSON
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: profile-readme-playwright
+          path: artifacts/readme-qa/
+          if-no-files-found: warn
