@@ -78,7 +78,7 @@ try {
       });
       await page.waitForFunction(() => {
         const images = [...document.querySelectorAll('.markdown-body img')];
-        return images.length >= 9 && images.every((image) => image.complete);
+        return images.length >= 11 && images.every((image) => image.complete);
       }, undefined, { timeout: 20000 });
       await page.locator('body').evaluate(async () => {
         if (document.fonts?.ready) await document.fonts.ready;
@@ -89,7 +89,11 @@ try {
         headings: root.querySelectorAll('h1, h2, h3').length,
         images: root.querySelectorAll('img').length,
         projectPreviews: [...root.querySelectorAll('img')]
-          .filter((image) => /Captura real|Arte do menu|Captura da página pública/.test(image.alt)).length,
+          .filter((image) => image.getAttribute('width') === '48%' &&
+            image.src.includes('/img/projects/')).length,
+        gamePreviews: [...root.querySelectorAll('img')]
+          .filter((image) => image.getAttribute('width') === '680' &&
+            (/slimekeepers-menu\.png|redream\.jpg/.test(image.src))).length,
         brokenLoadedImages: [...root.querySelectorAll('img')]
           .filter((image) => image.complete && image.naturalWidth === 0)
           .map((image) => image.currentSrc || image.src),
@@ -98,6 +102,10 @@ try {
       if (item.metrics.projectPreviews !== 6) {
         failed = true;
         console.error('Galeria incompleta em ' + viewport.name + ': ' + item.metrics.projectPreviews + '/6');
+      }
+      if (item.metrics.gamePreviews !== 2) {
+        failed = true;
+        console.error('Imagens dos jogos incompletas em ' + viewport.name + ': ' + item.metrics.gamePreviews + '/2');
       }
 
       await page.screenshot({
