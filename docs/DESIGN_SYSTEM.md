@@ -1,97 +1,55 @@
-# Design System — README de perfil
+# Design System — Perfil GitHub
 
-> Guia de manutenção de [HelioConde/HelioConde](../README.md). O README aparece dentro da interface do GitHub: **não** é uma página independente com CSS/JavaScript próprios.
+> O README é Markdown renderizado pelo GitHub. Não há CSS customizado, comportamento JavaScript ou sistema de layout proprietário.
 
-## Objetivo e princípios
+## Direção editorial
 
-Apresentar rapidamente **quem é Hélio**, mostrar trabalhos concretos e facilitar o acesso ao portfólio, demos e códigos. Preservar a identidade de desenvolvedor web e criador de jogos, com informações factuais sobre o estágio de cada produto.
+O perfil deve comunicar **o que Hélio construiu**, em vez de repetir uma biografia ou exibir métricas decorativas. Os projetos mais representativos aparecem primeiro; outros repositórios ficam em seções expansíveis.
 
-1. **Clareza antes de decoração:** nenhum efeito animado deve competir com os projetos.
-2. **Projetos com contexto:** nome, problema/resultado, tecnologias e pelo menos um link funcional.
-3. **Hierarquia previsível:** uma introdução curta, navegação, projetos principais, jogos e links secundários recolhidos.
-4. **Acessível por padrão:** texto alternativo nas imagens, títulos sem saltos, links descritivos e navegação também por texto.
-5. **Mobile primeiro:** evitar tabelas extensas, grids HTML de largura fixa e parágrafos de links longos.
-6. **Sem estatísticas artificiais:** métricas públicas precisam de fonte, referência temporal e revisão.
-7. **Sem tecnologias exageradas:** diferenciar o que está implementado do que está apenas planejado.
+1. **Hero curto:** nome, atuação, proposta de valor e três links úteis (portfólio, LinkedIn e GitHub).
+2. **Vitrine única:** Ofertamática, Base Studio Pizzas e PlayWithEliteItem recebem **uma imagem** cada, imediatamente antes de sua descrição.
+3. **Jogos em evolução:** Slimekeepers e Re:Dream aparecem com **uma imagem contextual própria**; os títulos dizem explicitamente “em desenvolvimento”.
+4. **Arquivo compacto:** os demais projetos ficam organizados em `<details>` nativo.
+5. **Stack de leitura rápida:** quatro linhas com categorias, sem blocos extensos de badges ou autoelogios.
 
-## Tokens editoriais (Taste Skill)
+## Padrões visuais (Taste / Awesome Design)
 
-Estes tokens são **convenções de autoria**, não variáveis CSS executadas no README.
-
-| Token | Regra |
+| Elemento | Padrão |
 | --- | --- |
-| `space.section` | Uma linha em branco entre seções; separador apenas depois da apresentação |
-| `space.group` | Uma linha em branco entre título, descrição e metadados |
-| `type.hero` | Um único `<h1>`, com nome e saudação breve |
-| `type.section` | `##` para os grupos principais; `###` para cada projeto |
-| `type.metadata` | Labels em negrito e tecnologias separadas por `·` |
-| `surface.feature` | Blocos de destaque feitos com títulos + texto + links (sem CSS adicional) |
-| `surface.archive` | `<details>` e `<summary>` para projetos secundários |
-| `color.primary` | `#111827` (badges escuros) |
-| `color.linkedin` | `#0A66C2` (badge LinkedIn) |
-| `color.github` | `#24292F` (badge repositórios) |
-| `interaction.focus` | Deixar a indicação de foco para os controles nativos do GitHub; não ocultá-la |
-| `motion.preference` | Sem animações automáticas; conteúdo integralmente compreensível sem movimento |
+| Espaçamento | Linha em branco entre componentes; sem separadores a cada projeto |
+| Tipografia | Único H1, seções H2, projetos H3 |
+| CTAs | Um link primário destacado e um link de código por projeto |
+| Imagens | `<img width="680">`, com `alt` claro, dentro de link HTTPS |
+| Identidade | Tipografia e fundo nativos do GitHub; badges escuros apenas no hero |
+| Status | Texto legível, não depende de cor ou emoji |
+| Interação | `<details><summary>` para coleções secundárias |
+| Movimento | Sem GIFs, animações ou carrosséis automáticos |
 
-Os tokens de cor representam apenas o **estilo visual dos badges**. O GitHub decide as cores de fundo, os links, o foco e o suporte a temas claro/escuro.
+## Imagens: uma aparição por projeto
 
-## Componentes documentais (Awesome Design / Image to Code)
+Todas são arquivos reais já existentes em `HelioConde/portfolio2.0/img/projects/`:
+- `ofertamatica.jpg` — captura da aplicação pública.
+- `base-studio-pizzas.jpg` — captura do site público.
+- `playwitheliteitem.jpg` — página pública no Thunderstore; **não gameplay**.
+- `slimekeepers-menu.png` — arte do menu principal; **não gameplay**.
+- `redream.jpg` — captura da **pré-alfa pública**, sem prometer multiplayer de produção.
 
-### Hero
+Origens documentadas em [PREVIAS_PROJETOS.md](https://github.com/HelioConde/portfolio2.0/blob/main/docs/PREVIAS_PROJETOS.md). Evite reutilizar a mesma imagem em uma galeria separada e depois na descrição.
 
-- Nome e atuação profissional em primeiro plano.
-- Proposta de valor curta, sem empilhar dezenas de badges.
-- Ações de portfólio, LinkedIn e repositórios com textos alternativos inequívocos.
+## Regras de conteúdo
 
-### Destaque de projeto
+- Diferenciar projeto de portfólio concluído de produto comercial homologado.
+- Distinguir mod público do código experimental.
+- Informar status “em desenvolvimento” para Slimekeepers e Re:Dream, sendo este último **pré-alfa**.
+- Não afirmar funcionalidades de backend persistente em projetos apenas com frontend estático no GitHub Pages.
+- Atualizar stacks a partir dos READMEs dos repositórios, não de planos antigos.
+- Não mostrar estatísticas de downloads sem data e fonte.
+- Não divulgar dados privados, chaves, tokens ou trabalho interno.
 
-Padrão: `### Ícone + Nome — problema/valor`, descrição em até dois parágrafos curtos, tecnologias, links e ressalva de maturidade quando necessária. A imagem só aparece quando agrega compreensão real, com `alt` descritivo e largura limitada pelo GitHub.
+## Qualidade
 
-### Galeria de projetos
+`npm run qa:readme` valida seções, âncoras, HTTPS, cinco imagens únicas, textos alternativos e links dos jogos.
 
-A galeria reúne **imagens reais já documentadas** em `HelioConde/portfolio2.0/img/projects/`. São três fileiras com duas imagens clicáveis por linha, `width="48%"`, alt específico, legenda textual e link para a demonstração/repositório. As imagens se adaptam à largura disponível sem exigir CSS ou JavaScript customizados.
+`npm run qa:visual` captura o README real no GitHub em **390, 768 e 1440 px**, aguardando o carregamento das imagens. Registra largura de conteúdo, imagens quebradas, console e relatório JSON.
 
-- Prefira JPEGs das capturas públicas; o arquivo PNG de Slimekeepers mostra **arte do menu**, não gameplay.
-- A imagem PlayWithEliteItem representa a **página de publicação no Thunderstore**, não gameplay.
-- Mantenha o bloco leve: duas imagens por linha, sem duplicar fotos nos projetos concluídos; os jogos em desenvolvimento recebem também uma versão ampliada contextual.
-- Cada foto deve apontar para a demo ou repositório correspondente e ter uma descrição honesta.
-- Confirme o carregamento em mobile, tablet e desktop com Playwright, sem depender de imagens externas opacas ou de GIFs.
-- [Inventário de origem das imagens](https://github.com/HelioConde/portfolio2.0/blob/main/docs/PREVIAS_PROJETOS.md).
-
-### Jogos em desenvolvimento com imagem contextual
-
-Os jogos **Slimekeepers: Lost Valley** e **Re:Dream** aparecem duas vezes propositalmente: em miniatura na galeria geral e com imagem ampliada (680 px, limitada pelo CSS responsivo nativo do GitHub) imediatamente abaixo do título na seção individual. A imagem e a descrição precisam permanecer juntas, seguidas de **Status**, **Tecnologias** e **Links**.
-
-- Os títulos devem incluir literalmente **em desenvolvimento**; Re:Dream também informa **pré-alfa**.
-- Slimekeepers usa arte do menu, identificada como **não gameplay**.
-- Re:Dream usa captura da pré-alfa pública, sem sugerir funcionalidades multiplayer de produção.
-- Preservar alt específico em cada imagem, legenda explicativa e link para o projeto.
-- O QA deve verificar que cada jogo tem uma imagem própria na seção detalhada, além da miniatura na galeria.
-
-### Arquivo de projetos
-
-Utilizar `<details>` nativo para organizar links em temas. O elemento funciona sem JS customizado e oferece navegação por teclado. Não usar carrossel interativo dentro do README.
-
-## Diretrizes de web design e acessibilidade
-
-- Sequência semântica dos títulos; um H1.
-- Não depender apenas de emoji ou cor para transmitir significado.
-- `alt` descritivo em screenshots; nos badges, o texto alternativo comunica a ação.
-- Todos os links de projetos usam HTTPS.
-- Não usar GIFs em loop, fundos cintilantes nem animações que ignorem `prefers-reduced-motion`.
-- Evitar tabelas como grade visual de cards, por causa da rolagem horizontal no mobile.
-- Preservar rótulos de estágios: estudo, protótipo, beta, publicado ou concluído.
-- Evitar dados pessoais de trabalho, segredos, credenciais e identificadores privados.
-
-## Qualidade e revisão (Playwright CLI)
-
-1. Executar `npm run qa:readme`: estrutura, âncoras locais, links HTTPS, imagens com texto alternativo e limites de mídia.
-2. Executar `npm run qa:visual` **com acesso à internet**: o Playwright captura a versão renderizada do README no GitHub nas larguras 390, 768 e 1440 px.
-3. Revisar `artifacts/readme-qa/` (capturas e relatório JSON), especialmente quebras horizontais, imagens e erros de página.
-4. Revisar manualmente links externos, descrições de produtos e maturidade das versões; testes automáticos não provam que uma funcionalidade está operacional.
-
-A automação usa o README da **branch em revisão** em vez de assumir que a versão pública já foi alterada. A aparência final pode variar conforme as mudanças na própria interface do GitHub.
-
-## Alterações futuras
-
-Antes de inserir um novo projeto em destaque, pergunte: ele representa um resultado verificável? Uma demonstração ou repositório está acessível? O status está correto? Faz sentido exibi-lo antes dos demais? Preserve um conjunto curto de destaques; demais entradas pertencem ao arquivo recolhível.
+A verificação automática não substitui inspeção humana de espaçamento, comprimento da página, hierarquia e fidelidade das imagens. O README não precisa de GitHub Pages nem banco de dados.
