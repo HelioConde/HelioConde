@@ -66,6 +66,20 @@ try {
         return current && current.textContent.includes('Ofertamática');
       }, undefined, { timeout: 25000 });
       await page.waitForTimeout(900);
+      // Role até o fim para disparar o lazy-loading das prévias do GitHub.
+      await page.evaluate(async () => {
+        const pause = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+        const step = Math.max(500, window.innerHeight);
+        for (let y = 0; y < document.documentElement.scrollHeight; y += step) {
+          window.scrollTo(0, y);
+          await pause(75);
+        }
+        window.scrollTo(0, 0);
+      });
+      await page.waitForFunction(() => {
+        const images = [...document.querySelectorAll('.markdown-body img')];
+        return images.length >= 9 && images.every((image) => image.complete);
+      }, undefined, { timeout: 20000 });
       await page.locator('body').evaluate(async () => {
         if (document.fonts?.ready) await document.fonts.ready;
       });
@@ -74,11 +88,17 @@ try {
         scrollWidth: root.scrollWidth,
         headings: root.querySelectorAll('h1, h2, h3').length,
         images: root.querySelectorAll('img').length,
+        projectPreviews: [...root.querySelectorAll('img')]
+          .filter((image) => /Captura real|Arte do menu|Captura da página pública/.test(image.alt)).length,
         brokenLoadedImages: [...root.querySelectorAll('img')]
           .filter((image) => image.complete && image.naturalWidth === 0)
           .map((image) => image.currentSrc || image.src),
       }));
       item.horizontalOverflow = item.metrics.scrollWidth > item.metrics.clientWidth + 8;
+      if (item.metrics.projectPreviews !== 6) {
+        failed = true;
+        console.error('Galeria incompleta em ' + viewport.name + ': ' + item.metrics.projectPreviews + '/6');
+      }
 
       await page.screenshot({
         path: join(outputDir, item.screenshot),

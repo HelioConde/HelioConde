@@ -47,6 +47,17 @@ Os tokens de cor representam apenas o **estilo visual dos badges**. O GitHub dec
 
 Padrão: `### Ícone + Nome — problema/valor`, descrição em até dois parágrafos curtos, tecnologias, links e ressalva de maturidade quando necessária. A imagem só aparece quando agrega compreensão real, com `alt` descritivo e largura limitada pelo GitHub.
 
+### Galeria de projetos
+
+A galeria reúne **imagens reais já documentadas** em `HelioConde/portfolio2.0/img/projects/`. São três fileiras com duas imagens clicáveis por linha, `width="48%"`, alt específico, legenda textual e link para a demonstração/repositório. As imagens se adaptam à largura disponível sem exigir CSS ou JavaScript customizados.
+
+- Prefira JPEGs das capturas públicas; o arquivo PNG de Slimekeepers mostra **arte do menu**, não gameplay.
+- A imagem PlayWithEliteItem representa a **página de publicação no Thunderstore**, não gameplay.
+- Mantenha o bloco leve: duas imagens por linha, sem duplicar fotos nos destaques abaixo.
+- Cada foto deve apontar para a demo ou repositório correspondente e ter uma descrição honesta.
+- Confirme o carregamento em mobile, tablet e desktop com Playwright, sem depender de imagens externas opacas ou de GIFs.
+- [Inventário de origem das imagens](https://github.com/HelioConde/portfolio2.0/blob/main/docs/PREVIAS_PROJETOS.md).
+
 ### Arquivo de projetos
 
 Utilizar `<details>` nativo para organizar links em temas. O elemento funciona sem JS customizado e oferece navegação por teclado. Não usar carrossel interativo dentro do README.
