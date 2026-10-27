@@ -53,7 +53,14 @@ try {
 
       const article = page.locator('article.markdown-body, .markdown-body').first();
       await article.waitFor({ state: 'visible', timeout: 25000 });
-      await article.scrollIntoViewIfNeeded();
+      // A interface do GitHub hidrata e substitui nós depois do DOMContentLoaded.
+      // Não role um elemento que pode ser desmontado; aguarde conteúdo estável.
+      await page.waitForFunction(() => {
+        const current = document.querySelector('article.markdown-body') ||
+          document.querySelector('.markdown-body');
+        return current && current.textContent.includes('Ofertamática');
+      }, undefined, { timeout: 25000 });
+      await page.waitForTimeout(900);
       await page.locator('body').evaluate(async () => {
         if (document.fonts?.ready) await document.fonts.ready;
       });
