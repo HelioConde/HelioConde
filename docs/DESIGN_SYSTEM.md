@@ -53,10 +53,20 @@ A galeria reúne **imagens reais já documentadas** em `HelioConde/portfolio2.0/
 
 - Prefira JPEGs das capturas públicas; o arquivo PNG de Slimekeepers mostra **arte do menu**, não gameplay.
 - A imagem PlayWithEliteItem representa a **página de publicação no Thunderstore**, não gameplay.
-- Mantenha o bloco leve: duas imagens por linha, sem duplicar fotos nos destaques abaixo.
+- Mantenha o bloco leve: duas imagens por linha, sem duplicar fotos nos projetos concluídos; os jogos em desenvolvimento recebem também uma versão ampliada contextual.
 - Cada foto deve apontar para a demo ou repositório correspondente e ter uma descrição honesta.
 - Confirme o carregamento em mobile, tablet e desktop com Playwright, sem depender de imagens externas opacas ou de GIFs.
 - [Inventário de origem das imagens](https://github.com/HelioConde/portfolio2.0/blob/main/docs/PREVIAS_PROJETOS.md).
+
+### Jogos em desenvolvimento com imagem contextual
+
+Os jogos **Slimekeepers: Lost Valley** e **Re:Dream** aparecem duas vezes propositalmente: em miniatura na galeria geral e com imagem ampliada (680 px, limitada pelo CSS responsivo nativo do GitHub) imediatamente abaixo do título na seção individual. A imagem e a descrição precisam permanecer juntas, seguidas de **Status**, **Tecnologias** e **Links**.
+
+- Os títulos devem incluir literalmente **em desenvolvimento**; Re:Dream também informa **pré-alfa**.
+- Slimekeepers usa arte do menu, identificada como **não gameplay**.
+- Re:Dream usa captura da pré-alfa pública, sem sugerir funcionalidades multiplayer de produção.
+- Preservar alt específico em cada imagem, legenda explicativa e link para o projeto.
+- O QA deve verificar que cada jogo tem uma imagem própria na seção detalhada, além da miniatura na galeria.
 
 ### Arquivo de projetos
 
