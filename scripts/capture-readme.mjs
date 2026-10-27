@@ -78,7 +78,7 @@ try {
       });
       await page.waitForFunction(() => {
         const images = [...document.querySelectorAll('.markdown-body img')];
-        return images.length >= 11 && images.every((image) => image.complete);
+        return images.length >= 8 && images.every((image) => image.complete);
       }, undefined, { timeout: 20000 });
       await page.locator('body').evaluate(async () => {
         if (document.fonts?.ready) await document.fonts.ready;
@@ -89,7 +89,7 @@ try {
         headings: root.querySelectorAll('h1, h2, h3').length,
         images: root.querySelectorAll('img').length,
         projectPreviews: [...root.querySelectorAll('img')]
-          .filter((image) => image.getAttribute('width') === '48%' &&
+          .filter((image) => image.getAttribute('width') === '680' &&
             image.src.includes('/img/projects/')).length,
         gamePreviews: [...root.querySelectorAll('img')]
           .filter((image) => image.getAttribute('width') === '680' &&
@@ -99,9 +99,9 @@ try {
           .map((image) => image.currentSrc || image.src),
       }));
       item.horizontalOverflow = item.metrics.scrollWidth > item.metrics.clientWidth + 8;
-      if (item.metrics.projectPreviews !== 6) {
+      if (item.metrics.projectPreviews !== 5) {
         failed = true;
-        console.error('Galeria incompleta em ' + viewport.name + ': ' + item.metrics.projectPreviews + '/6');
+        console.error('Vitrine de projetos incompleta em ' + viewport.name + ': ' + item.metrics.projectPreviews + '/5');
       }
       if (item.metrics.gamePreviews !== 2) {
         failed = true;
