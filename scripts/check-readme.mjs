@@ -14,13 +14,10 @@ const headings = [...markdown.matchAll(/^(#{2,3})\s+(.+)$/gm)].map((match) => ({
 }));
 const sectionNames = headings.filter((heading) => heading.depth === 2).map((heading) => heading.text);
 const required = [
-  'O que eu construo',
   'Projetos em destaque',
   'Jogos em desenvolvimento',
   'Outros projetos',
   'Tecnologias',
-  'Sobre mim',
-  'Contato',
 ];
 
 check(markdown.length > 1500, 'README muito curto para o portfólio do perfil.');
@@ -69,35 +66,45 @@ for (const url of urls) {
 }
 check(urls.length >= 18, 'Links insuficientes: revise os projetos citados.');
 
-const gallerySection = markdown.split('## Galeria de projetos\n')[1]?.split('\n## Projetos em destaque')[0] || '';
-const galleryImages = [...gallerySection.matchAll(/<img\b[^>]*>/gi)].map((match) => match[0]);
-const previews = galleryImages.filter((tag) =>
-  tag.includes('raw.githubusercontent.com/HelioConde/portfolio2.0/main/img/projects/'));
-check(previews.length === 6, 'A galeria deve incluir exatamente seis miniaturas dos projetos.');
-for (const tag of previews) {
-  check(/\bwidth="48%"/.test(tag), 'Largura inconsistente na galeria (48%): ' + tag.slice(0, 90));
-  check(/\balt="[^"]{30,}"/.test(tag), 'Descrição da imagem do projeto muito curta.');
+const imageSources = [...images]
+  .map((tag) => tag.match(/\bsrc="([^"]+)"/)?.[1] || '')
+  .filter((src) => src.includes('/img/projects/'));
+const expected = [
+  'ofertamatica.jpg',
+  'base-studio-pizzas.jpg',
+  'playwitheliteitem.jpg',
+  'slimekeepers-menu.png',
+  'redream.jpg',
+];
+check(imageSources.length === 5, 'Cada projeto em destaque precisa de uma única imagem: são cinco projetos.');
+check(new Set(imageSources).size === imageSources.length, 'Há imagens repetidas no perfil.');
+for (const filename of expected) {
+  check(imageSources.filter((src) => src.endsWith('/' + filename)).length === 1,
+    'Imagem ausente ou duplicada: ' + filename);
 }
-check(sectionNames.includes('Galeria de projetos'), 'A galeria precisa de seção própria.');
-
-const gamesSection = markdown.split('## Jogos em desenvolvimento\n')[1]?.split('\n## Outros projetos')[0] || '';
-for (const [name, imageFile] of [
-  ['Slimekeepers: Lost Valley', 'slimekeepers-menu.png'],
-  ['Re:Dream', 'redream.jpg'],
+for (const tag of images.filter((tag) => tag.includes('/img/projects/'))) {
+  check(/\bwidth="680"/.test(tag), 'Padronizar imagens dos projetos em width=680.');
+  check(/\balt="[^"]{30,}"/.test(tag), 'Uma prévia precisa de alt descritivo.');
+}
+check(!sectionNames.includes('Galeria de projetos'), 'A galeria separada não deve duplicar as imagens.');
+check(!sectionNames.includes('O que eu construo'), 'Remover apresentação repetida.');
+check(!sectionNames.includes('Sobre mim'), 'Evitar bio repetida no final.');
+const games = markdown.split('## Jogos em desenvolvimento\n')[1]?.split('\n## Outros projetos')[0] || '';
+for (const [name,filename] of [
+  ['Slimekeepers: Lost Valley','slimekeepers-menu.png'],
+  ['Re:Dream','redream.jpg']
 ]) {
-  const heading = gamesSection.split('\n').find((line) => line.startsWith('### ') && line.includes(name));
-  check(Boolean(heading?.includes('em desenvolvimento')), 'Título deve informar em desenvolvimento: ' + name);
-  if (!heading) continue;
-  const start = gamesSection.indexOf(heading) + heading.length;
-  const next = gamesSection.indexOf('\n### ', start);
-  const block = gamesSection.slice(start, next < 0 ? undefined : next);
-  check(block.includes('/img/projects/' + imageFile), 'Imagem do jogo ausente junto à descrição: ' + name);
-  check(/<img\b[^>]*\bwidth="680"[^>]*\balt="[^"]{30,}"/i.test(block), 'Imagem contextual precisa ter largura 680 e alt informativo: ' + name);
-  check(block.includes('**Status:**') && block.includes('Em desenvolvimento'), 'Status de desenvolvimento ausente: ' + name);
-  check(block.includes('**Tecnologias') && block.includes('https://github.com/HelioConde/'), 'Tecnologias ou link do projeto ausentes: ' + name);
+  const heading = games.split('\n').find((line) => line.startsWith('### ') && line.includes(name));
+  check(Boolean(heading && heading.includes('em desenvolvimento')), 'Título deve dizer em desenvolvimento: ' + name);
+  if(!heading) continue;
+  const nextStart = games.indexOf(heading) + heading.length;
+  const end = games.indexOf('\n### ', nextStart);
+  const block = games.slice(nextStart, end === -1 ? undefined : end);
+  check(block.includes('/img/projects/'+filename), 'Imagem precisa acompanhar a descrição: ' + name);
+  check(block.includes('https://github.com/HelioConde/'), 'Link para código ausente: ' + name);
 }
-check(gamesSection.includes('não uma captura de gameplay'), 'Informar que arte de Slimekeepers não é gameplay.');
-check(gamesSection.includes('pré-alfa pública'), 'Informar que Re:Dream é uma pré-alfa.');
+check(games.includes('não gameplay'), 'Identificar arte do menu de Slimekeepers.');
+check(games.includes('pré-alfa pública'), 'Distinguir a pré-alfa de Re:Dream.');
 
 for (const message of warnings) console.warn('AVISO: ' + message);
 if (errors.length) {
@@ -106,4 +113,4 @@ if (errors.length) {
 }
 console.log('README QA aprovado: ' + sectionNames.length + ' seções, ' +
   images.length + ' imagens, ' + urls.length + ' links/recursos e ' +
-  [...markdown.matchAll(/^###\s+/gm)].length + ' subseções.');
+  [...markdown.matchAll(/^###\s+/gm)].length + ' projetos destacados.');
