@@ -25,10 +25,11 @@ jobs:
     name: Estrutura e acessibilidade
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
         with:
-          node-version: '22'
+          node-version: '24'
+          package-manager-cache: false
       - name: Validar o README
         run: node scripts/check-readme.mjs
 
@@ -37,10 +38,11 @@ jobs:
     needs: readme
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
         with:
-          node-version: '22'
+          node-version: '24'
+          package-manager-cache: false
       - name: Instalar Playwright
         run: |
           npm install --no-audit --no-fund
@@ -51,7 +53,7 @@ jobs:
         run: npm run qa:visual
       - name: Anexar capturas e relatório JSON
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: profile-readme-playwright
           path: artifacts/readme-qa/
