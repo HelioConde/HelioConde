@@ -80,19 +80,35 @@ Mod publicado no Thunderstore que distribui equipamentos de elite aleatórios no
 
 ## Jogos em desenvolvimento
 
-### 🌿 Slimekeepers: Lost Valley
+Estes jogos têm protótipos e funcionalidades em evolução. **Não são versões finais**: interfaces, mecânicas e conteúdo ainda podem mudar.
 
-Meu projeto de aventura **cozy fantasy**, com fazenda, slimes selvagens, coleta, exploração e sistemas de progressão. Está em desenvolvimento; funcionalidades e artes ainda passam por testes.
+### 🌿 Slimekeepers: Lost Valley — em desenvolvimento
 
+<a href="https://github.com/HelioConde/Slime-Harvest" title="Explorar o repositório Slimekeepers: Lost Valley">
+  <img src="https://raw.githubusercontent.com/HelioConde/portfolio2.0/main/img/projects/slimekeepers-menu.png" width="680" alt="Arte do menu principal de Slimekeepers Lost Valley, jogo cozy fantasy em desenvolvimento; não é uma captura de gameplay" />
+</a>
+
+<sub>Arte do menu principal do jogo, não uma captura de gameplay.</sub>
+
+**Slimekeepers: Lost Valley** é um jogo de aventura *cozy fantasy* em desenvolvimento, com cultivo, exploração, coleta e slimes selvagens. O protótipo já reúne sistemas de ferramentas, recursos e fazenda, enquanto a jogabilidade e a direção visual continuam sendo aprimoradas.
+
+**Status:** 🚧 Em desenvolvimento  
 **Tecnologias:** Godot · GDScript  
-**Acompanhar:** [Repositório Slimekeepers](https://github.com/HelioConde/Slime-Harvest)
+**Projeto:** [Código e progresso de Slimekeepers](https://github.com/HelioConde/Slime-Harvest)
 
-### ⚔️ Re:Dream
+### ⚔️ Re:Dream — em desenvolvimento
 
-Jogo de ação 2D para navegador inspirado na energia dos jogos de plataforma cooperativos. O protótipo inclui seleção de personagem, lobby e experimentos de movimento e combate.
+<a href="https://helioconde.github.io/Re-Dream/" title="Experimentar a pré-alfa de Re:Dream">
+  <img src="https://raw.githubusercontent.com/HelioConde/portfolio2.0/main/img/projects/redream.jpg" width="680" alt="Captura real da tela inicial da pré-alfa de Re:Dream, jogo de ação 2D para navegador em desenvolvimento" />
+</a>
 
+<sub>Captura da pré-alfa pública do jogo; não representa uma versão final nem uma sessão multiplayer ativa.</sub>
+
+**Re:Dream** é um jogo de ação e plataformas 2D para navegador em desenvolvimento. A pré-alfa apresenta experimentos com personagens, movimento, combate e salas; o conteúdo cooperativo e os demais sistemas ainda estão evoluindo.
+
+**Status:** 🚧 Em desenvolvimento (pré-alfa)  
 **Tecnologias atuais:** React · WebSocket · JavaScript  
-**Links:** [Experimentar pré-alfa no navegador](https://helioconde.github.io/Re-Dream/) · [Repositório Re:Dream](https://github.com/HelioConde/Re-Dream)
+**Links:** [Experimentar a pré-alfa](https://helioconde.github.io/Re-Dream/) · [Código e progresso de Re:Dream](https://github.com/HelioConde/Re-Dream)
 
 ## Outros projetos
 
