@@ -69,6 +69,16 @@ for (const url of urls) {
 }
 check(urls.length >= 18, 'Links insuficientes: revise os projetos citados.');
 
+const previews = images.filter((tag) =>
+  tag.includes('raw.githubusercontent.com/HelioConde/portfolio2.0/main/img/projects/'));
+check(previews.length >= 6, 'A galeria precisa incluir as seis imagens reais documentadas.');
+for (const tag of previews) {
+  check(/\bwidth="48%"/.test(tag), 'Largura inconsistente na galeria (48%): ' + tag.slice(0, 90));
+  check(/\balt="[^"]{30,}"/.test(tag), 'Descrição da imagem do projeto muito curta.');
+}
+check(sectionNames.includes('Galeria de projetos'), 'A galeria precisa de seção própria.');
+
+
 for (const message of warnings) console.warn('AVISO: ' + message);
 if (errors.length) {
   for (const message of errors) console.error('ERRO: ' + message);
