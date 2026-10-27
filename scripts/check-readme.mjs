@@ -69,15 +69,35 @@ for (const url of urls) {
 }
 check(urls.length >= 18, 'Links insuficientes: revise os projetos citados.');
 
-const previews = images.filter((tag) =>
+const gallerySection = markdown.split('## Galeria de projetos\n')[1]?.split('\n## Projetos em destaque')[0] || '';
+const galleryImages = [...gallerySection.matchAll(/<img\b[^>]*>/gi)].map((match) => match[0]);
+const previews = galleryImages.filter((tag) =>
   tag.includes('raw.githubusercontent.com/HelioConde/portfolio2.0/main/img/projects/'));
-check(previews.length >= 6, 'A galeria precisa incluir as seis imagens reais documentadas.');
+check(previews.length === 6, 'A galeria deve incluir exatamente seis miniaturas dos projetos.');
 for (const tag of previews) {
   check(/\bwidth="48%"/.test(tag), 'Largura inconsistente na galeria (48%): ' + tag.slice(0, 90));
   check(/\balt="[^"]{30,}"/.test(tag), 'Descrição da imagem do projeto muito curta.');
 }
 check(sectionNames.includes('Galeria de projetos'), 'A galeria precisa de seção própria.');
 
+const gamesSection = markdown.split('## Jogos em desenvolvimento\n')[1]?.split('\n## Outros projetos')[0] || '';
+for (const [name, imageFile] of [
+  ['Slimekeepers: Lost Valley', 'slimekeepers-menu.png'],
+  ['Re:Dream', 'redream.jpg'],
+]) {
+  const heading = gamesSection.split('\n').find((line) => line.startsWith('### ') && line.includes(name));
+  check(Boolean(heading?.includes('em desenvolvimento')), 'Título deve informar em desenvolvimento: ' + name);
+  if (!heading) continue;
+  const start = gamesSection.indexOf(heading) + heading.length;
+  const next = gamesSection.indexOf('\n### ', start);
+  const block = gamesSection.slice(start, next < 0 ? undefined : next);
+  check(block.includes('/img/projects/' + imageFile), 'Imagem do jogo ausente junto à descrição: ' + name);
+  check(/<img\b[^>]*\bwidth="680"[^>]*\balt="[^"]{30,}"/i.test(block), 'Imagem contextual precisa ter largura 680 e alt informativo: ' + name);
+  check(block.includes('**Status:**') && block.includes('Em desenvolvimento'), 'Status de desenvolvimento ausente: ' + name);
+  check(block.includes('**Tecnologias') && block.includes('https://github.com/HelioConde/'), 'Tecnologias ou link do projeto ausentes: ' + name);
+}
+check(gamesSection.includes('não uma captura de gameplay'), 'Informar que arte de Slimekeepers não é gameplay.');
+check(gamesSection.includes('pré-alfa pública'), 'Informar que Re:Dream é uma pré-alfa.');
 
 for (const message of warnings) console.warn('AVISO: ' + message);
 if (errors.length) {
