@@ -24,7 +24,7 @@
 
 **[Publicação no Thunderstore](https://thunderstore.io/c/riskofrain2/p/CONDE/PlayWithEliteItem/)** · **[Código e documentação](https://github.com/HelioConde/PlayWithEliteItem)**
 
-<sub>Versão distribuída: 1.0.1. O código mais recente no GitHub é uma revisão separada, ainda sujeita a testes dentro do jogo.</sub>
+<sub>Thunderstore: **1.0.1**, versão publicada. GitHub: **1.2.1**, candidata experimental com elite fixo no segundo slot e manutenção do buff passivo no servidor; ainda exige testes em jogo e multiplayer.</sub>
 
 ### 🍕 Base Studio Pizzas — projeto full-stack concluído
 
