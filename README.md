@@ -63,16 +63,25 @@
 
 ### 🌿 Slimekeepers: Lost Valley — em desenvolvimento
 
-<a href="https://github.com/HelioConde/Slime-Harvest">
-  <img src="https://raw.githubusercontent.com/HelioConde/portfolio2.0/main/img/projects/slimekeepers-menu.png" width="680" alt="Arte do menu de Slimekeepers Lost Valley, aventura cozy fantasy em desenvolvimento; não é gameplay">
+<a href="https://github.com/HelioConde/Slimekeepers-Lost-Valley">
+  <img src="https://raw.githubusercontent.com/HelioConde/Slimekeepers-Lost-Valley/main/docs/world/clareira_spawn.png" width="680" alt="Captura real de gameplay da região florestal de Slimekeepers Lost Valley">
 </a>
 
-**Aventura cozy fantasy em Godot.** Fazenda, exploração, coleta e slimes que fazem parte de um ecossistema selvagem. O protótipo possui sistemas jogáveis ainda em integração e polimento.
+**RPG cozy fantasy em pixel art**, criado com Godot. Uma aventura de sobrevivência, exploração, fazenda e amizade com slimes, em um mundo cheio de natureza e mistérios.
 
-`Godot` · `GDScript` · **Em desenvolvimento**  
-[**Acompanhar o desenvolvimento**](https://github.com/HelioConde/Slime-Harvest)
+<p>
+  <a href="https://github.com/HelioConde/Slimekeepers-Lost-Valley/blob/main/docs/world/clareira_spawn.png">
+    <img src="https://raw.githubusercontent.com/HelioConde/Slimekeepers-Lost-Valley/main/docs/world/clareira_spawn.png" width="325" alt="Região florestal com árvores e caminhos naturais">
+  </a>
+  <a href="https://github.com/HelioConde/Slimekeepers-Lost-Valley/blob/main/docs/world/vale/vale_bridge.png">
+    <img src="https://raw.githubusercontent.com/HelioConde/Slimekeepers-Lost-Valley/main/docs/world/vale/vale_bridge.png" width="325" alt="Região do Vale das Nascentes com água e ponte">
+  </a>
+</p>
 
-<sub>Arte do menu principal, não captura de gameplay.</sub>
+`Godot 4.7` · `GDScript` · `Pixel art` · **Em desenvolvimento**  
+[**Ver o jogo e acompanhar o desenvolvimento**](https://github.com/HelioConde/Slimekeepers-Lost-Valley)
+
+<sub>Imagens reais do protótipo; cenários, sistemas e interface ainda estão sendo aperfeiçoados.</sub>
 
 ### ⚔️ Re:Dream — em desenvolvimento
 
