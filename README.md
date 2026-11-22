@@ -64,33 +64,33 @@
 ### 🌿 Slimekeepers: Lost Valley — em desenvolvimento
 
 <a href="https://github.com/HelioConde/Slimekeepers-Lost-Valley">
-  <img src="https://raw.githubusercontent.com/HelioConde/Slimekeepers-Lost-Valley/main/docs/world/day_night/FlorestaDoDespertarV2_dia.png" width="680" alt="Captura de desenvolvimento do Slimekeepers: exploração da Floresta do Despertar durante o dia">
+  <img src="https://raw.githubusercontent.com/HelioConde/Slimekeepers-Lost-Valley/main/docs/showcase/selecao-protagonista.webp" width="680" alt="Tela de seleção de protagonistas na floresta encantada">
 </a>
 
 **RPG cozy fantasy em pixel art**, criado com Godot. Uma aventura de sobrevivência, exploração, fazenda e amizade com slimes, em um mundo cheio de natureza e mistérios.
 
 <p>
-  <a href="https://github.com/HelioConde/Slimekeepers-Lost-Valley/blob/main/docs/world/forest_v2/after_overview.png">
-    <img src="https://raw.githubusercontent.com/HelioConde/Slimekeepers-Lost-Valley/main/docs/world/forest_v2/after_overview.png" width="325" alt="Vista geral da floresta e seus habitats">
+  <a href="https://github.com/HelioConde/Slimekeepers-Lost-Valley/blob/main/docs/showcase/clareira-dia.webp">
+    <img src="https://raw.githubusercontent.com/HelioConde/Slimekeepers-Lost-Valley/main/docs/showcase/clareira-dia.webp" width="325" alt="Clareira e exploração durante o dia">
   </a>
-  <a href="https://github.com/HelioConde/Slimekeepers-Lost-Valley/blob/main/docs/world/day_night/FlorestaDoDespertarV2_noite.png">
-    <img src="https://raw.githubusercontent.com/HelioConde/Slimekeepers-Lost-Valley/main/docs/world/day_night/FlorestaDoDespertarV2_noite.png" width="325" alt="Floresta mágica durante a noite">
+  <a href="https://github.com/HelioConde/Slimekeepers-Lost-Valley/blob/main/docs/showcase/floresta-noite.webp">
+    <img src="https://raw.githubusercontent.com/HelioConde/Slimekeepers-Lost-Valley/main/docs/showcase/floresta-noite.webp" width="325" alt="Floresta mágica com portal luminoso durante a noite">
   </a>
 </p>
 
 <p>
-  <a href="https://github.com/HelioConde/Slimekeepers-Lost-Valley/blob/main/docs/world/vale/vale_overview.png">
-    <img src="https://raw.githubusercontent.com/HelioConde/Slimekeepers-Lost-Valley/main/docs/world/vale/vale_overview.png" width="325" alt="Visão geral do Vale das Nascentes">
+  <a href="https://github.com/HelioConde/Slimekeepers-Lost-Valley/blob/main/docs/showcase/personagem-clareira.webp">
+    <img src="https://raw.githubusercontent.com/HelioConde/Slimekeepers-Lost-Valley/main/docs/showcase/personagem-clareira.webp" width="325" alt="Personagem na clareira durante a exploração">
   </a>
-  <a href="https://github.com/HelioConde/Slimekeepers-Lost-Valley/blob/main/docs/world/day_night/ValeDasNascentes_noite.png">
-    <img src="https://raw.githubusercontent.com/HelioConde/Slimekeepers-Lost-Valley/main/docs/world/day_night/ValeDasNascentes_noite.png" width="325" alt="Vale das Nascentes iluminado à noite">
+  <a href="https://github.com/HelioConde/Slimekeepers-Lost-Valley/blob/main/docs/showcase/vale-cachoeira.webp">
+    <img src="https://raw.githubusercontent.com/HelioConde/Slimekeepers-Lost-Valley/main/docs/showcase/vale-cachoeira.webp" width="325" alt="Cachoeira luminosa no Vale das Nascentes">
   </a>
 </p>
 
 `Godot 4.7` · `GDScript` · `Pixel art` · **Em desenvolvimento**  
 [**Ver o jogo, a galeria e acompanhar o desenvolvimento**](https://github.com/HelioConde/Slimekeepers-Lost-Valley#galeria-visual-do-protótipo)
 
-<sub>Capturas reais já versionadas no projeto; cenários, sistemas e interface ainda estão sendo aperfeiçoados.</sub>
+<sub>Capturas reais do protótipo atualizadas em 22/11/2026; cenários, sistemas e interface ainda estão sendo aperfeiçoados.</sub>
 
 ### ⚔️ Re:Dream — em desenvolvimento
 
