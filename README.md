@@ -64,24 +64,33 @@
 ### 🌿 Slimekeepers: Lost Valley — em desenvolvimento
 
 <a href="https://github.com/HelioConde/Slimekeepers-Lost-Valley">
-  <img src="https://raw.githubusercontent.com/HelioConde/Slimekeepers-Lost-Valley/main/docs/world/clareira_spawn.png" width="680" alt="Captura real de gameplay da região florestal de Slimekeepers Lost Valley">
+  <img src="https://raw.githubusercontent.com/HelioConde/Slimekeepers-Lost-Valley/main/docs/world/day_night/FlorestaDoDespertarV2_dia.png" width="680" alt="Captura de desenvolvimento do Slimekeepers: exploração da Floresta do Despertar durante o dia">
 </a>
 
 **RPG cozy fantasy em pixel art**, criado com Godot. Uma aventura de sobrevivência, exploração, fazenda e amizade com slimes, em um mundo cheio de natureza e mistérios.
 
 <p>
-  <a href="https://github.com/HelioConde/Slimekeepers-Lost-Valley/blob/main/docs/world/clareira_spawn.png">
-    <img src="https://raw.githubusercontent.com/HelioConde/Slimekeepers-Lost-Valley/main/docs/world/clareira_spawn.png" width="325" alt="Região florestal com árvores e caminhos naturais">
+  <a href="https://github.com/HelioConde/Slimekeepers-Lost-Valley/blob/main/docs/world/forest_v2/after_overview.png">
+    <img src="https://raw.githubusercontent.com/HelioConde/Slimekeepers-Lost-Valley/main/docs/world/forest_v2/after_overview.png" width="325" alt="Vista geral da floresta e seus habitats">
   </a>
-  <a href="https://github.com/HelioConde/Slimekeepers-Lost-Valley/blob/main/docs/world/vale/vale_bridge.png">
-    <img src="https://raw.githubusercontent.com/HelioConde/Slimekeepers-Lost-Valley/main/docs/world/vale/vale_bridge.png" width="325" alt="Região do Vale das Nascentes com água e ponte">
+  <a href="https://github.com/HelioConde/Slimekeepers-Lost-Valley/blob/main/docs/world/day_night/FlorestaDoDespertarV2_noite.png">
+    <img src="https://raw.githubusercontent.com/HelioConde/Slimekeepers-Lost-Valley/main/docs/world/day_night/FlorestaDoDespertarV2_noite.png" width="325" alt="Floresta mágica durante a noite">
+  </a>
+</p>
+
+<p>
+  <a href="https://github.com/HelioConde/Slimekeepers-Lost-Valley/blob/main/docs/world/vale/vale_overview.png">
+    <img src="https://raw.githubusercontent.com/HelioConde/Slimekeepers-Lost-Valley/main/docs/world/vale/vale_overview.png" width="325" alt="Visão geral do Vale das Nascentes">
+  </a>
+  <a href="https://github.com/HelioConde/Slimekeepers-Lost-Valley/blob/main/docs/world/day_night/ValeDasNascentes_noite.png">
+    <img src="https://raw.githubusercontent.com/HelioConde/Slimekeepers-Lost-Valley/main/docs/world/day_night/ValeDasNascentes_noite.png" width="325" alt="Vale das Nascentes iluminado à noite">
   </a>
 </p>
 
 `Godot 4.7` · `GDScript` · `Pixel art` · **Em desenvolvimento**  
-[**Ver o jogo e acompanhar o desenvolvimento**](https://github.com/HelioConde/Slimekeepers-Lost-Valley)
+[**Ver o jogo, a galeria e acompanhar o desenvolvimento**](https://github.com/HelioConde/Slimekeepers-Lost-Valley#galeria-visual-do-protótipo)
 
-<sub>Imagens reais do protótipo; cenários, sistemas e interface ainda estão sendo aperfeiçoados.</sub>
+<sub>Capturas reais já versionadas no projeto; cenários, sistemas e interface ainda estão sendo aperfeiçoados.</sub>
 
 ### ⚔️ Re:Dream — em desenvolvimento
 
